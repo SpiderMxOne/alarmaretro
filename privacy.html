@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - AlarmaRetro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="brand-title">AlarmaRetro</div>
+    <div class="brand-subtitle">Política de Privacidad / Privacy Policy</div>
+    <div class="nav-links">
+        <a href="index.html">Inicio / Home</a>
+        <a href="privacy.html">Privacidad / Privacy</a>
+        <a href="terms.html">Términos / Terms</a>
+    </div>
+</header>
+
+<div class="container">
+    <button class="lang-switch" onclick="toggleLanguage()">🌐 EN / ES</button>
+    <div style="clear: both;"></div>
+
+    <!-- SPANISH PRIVACY POLICY -->
+    <div id="content-es" class="card" style="margin-top: 20px;">
+        <h2>🔒 Política de Privacidad</h2>
+        <p><strong>Última actualización:</strong> 2026</p>
+        <p>Esta Política de Privacidad describe cómo <strong>Diego Torres Barragán</strong> (en adelante, el "Desarrollador") recopila, utiliza y protege la información de los usuarios al utilizar la aplicación móvil <strong>AlarmaRetro</strong>.</p>
+
+        <h3>1. Recopilación de Información y Permisos</h3>
+        <p>AlarmaRetro respeta profundamente la privacidad de los usuarios. La aplicación recopila o procesa únicamente la información necesaria para el funcionamiento de sus características principales:</p>
+        <ul>
+            <li><strong>Permiso de Lectura de Calendario (READ_CALENDAR):</strong> La app accede al calendario del dispositivo exclusivamente para mostrar los eventos y tareas agendados para el día actual en la marquesina del reloj. Ninguna información del calendario se almacena, transmite ni comparte fuera del dispositivo.</li>
+            <li><strong>Notificaciones (POST_NOTIFICATIONS / NotificationListenerService):</strong> Se utiliza localmente para proyectar notificaciones en la pantalla iluminada. Los datos no se almacenan externamente.</li>
+            <li><strong>Alarma Exacta (SCHEDULE_EXACT_ALARM):</strong> Se utiliza únicamente para programar el despertador a la hora exacta configurada por el usuario.</li>
+        </ul>
+
+        <h3>2. Anuncios Publicitarios y Compras (AdMob y Google Play Billing)</h3>
+        <ul>
+            <li><strong>Google AdMob:</strong> La app utiliza Google AdMob para mostrar banners publicitarios y vídeos recompensados. AdMob puede recopilar identificadores publicitarios estándar de Android (GAID) para mostrar anuncios relevantes. Puedes consultar la política de Google AdMob en sus canales oficiales.</li>
+            <li><strong>Google Play Billing:</strong> Las compras dentro de la aplicación (versión PRO) son procesadas directamente por la plataforma segura de Google Play Store. El Desarrollador no almacena ni recopila datos bancarios o de tarjetas de crédito.</li>
+        </ul>
+
+        <h3>3. Datos Climáticos</h3>
+        <p>La consulta de temperatura se realiza de forma anónima mediante solicitudes HTTP a servicios meteorológicos públicos (Open-Meteo). No se rastrea ni almacena la ubicación física continua del usuario.</p>
+
+        <h3>4. Contacto</h3>
+        <div class="contact-info">
+            <p>Si tienes preguntas sobre esta Política de Privacidad, puedes ponerte en contacto con el desarrollador:</p>
+            <p><strong>Desarrollador:</strong> Diego Torres Barragán</p>
+            <p><strong>Correo electrónico:</strong> <a href="mailto:spidermxone@gmail.com" style="color: var(--vfd-cyan);">spidermxone@gmail.com</a></p>
+        </div>
+    </div>
+
+    <!-- ENGLISH PRIVACY POLICY -->
+    <div id="content-en" class="card" style="margin-top: 20px; display: none;">
+        <h2>🔒 Privacy Policy</h2>
+        <p><strong>Last Updated:</strong> 2026</p>
+        <p>This Privacy Policy describes how <strong>Diego Torres Barragán</strong> (the "Developer") collects, uses, and protects user information when using the mobile application <strong>AlarmaRetro</strong>.</p>
+
+        <h3>1. Information Collection and Permissions</h3>
+        <p>AlarmaRetro respects user privacy. The application accesses and processes only the information required for its core functionality:</p>
+        <ul>
+            <li><strong>Calendar Permission (READ_CALENDAR):</strong> Accesses device calendar events solely to display daily agenda events on the clock's marquee. No calendar data is stored, transmitted, or shared off the device.</li>
+            <li><strong>Notifications (POST_NOTIFICATIONS / NotificationListenerService):</strong> Used locally on-device to project pending notifications on screen.</li>
+            <li><strong>Exact Alarms (SCHEDULE_EXACT_ALARM):</strong> Used solely to schedule precision alarm ringing.</li>
+        </ul>
+
+        <h3>2. Advertisements and Purchases (AdMob and Google Play Billing)</h3>
+        <ul>
+            <li><strong>Google AdMob:</strong> AlarmaRetro uses Google AdMob for banner ads and rewarded video ads. AdMob may collect standard Android Advertising IDs (GAID).</li>
+            <li><strong>Google Play Billing:</strong> In-app purchases (PRO Upgrade) are handled securely by Google Play Store. The Developer never stores financial or payment details.</li>
+        </ul>
+
+        <h3>3. Weather Data</h3>
+        <p>Temperature queries are fetched anonymously via public weather API requests (Open-Meteo). User location is not continuously tracked or saved.</p>
+
+        <h3>4. Contact Us</h3>
+        <div class="contact-info">
+            <p>If you have questions about this Privacy Policy, feel free to contact:</p>
+            <p><strong>Developer:</strong> Diego Torres Barragán</p>
+            <p><strong>Contact Email:</strong> <a href="mailto:spidermxone@gmail.com" style="color: var(--vfd-cyan);">spidermxone@gmail.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Diego Torres Barragán. All rights reserved / Todos los derechos reservados.</p>
+    </footer>
+</div>
+
+<script>
+    function toggleLanguage() {
+        const es = document.getElementById('content-es');
+        const en = document.getElementById('content-en');
+        if (es.style.display === 'none') {
+            es.style.display = 'block';
+            en.style.display = 'none';
+        } else {
+            es.style.display = 'none';
+            en.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

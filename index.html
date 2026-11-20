@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlarmaRetro - Reloj Despertador Retro 1984</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="brand-title">AlarmaRetro</div>
+    <div class="brand-subtitle">Radio-Reloj Despertador 1984 • 1980s Bedside VFD Clock</div>
+    <div class="nav-links">
+        <a href="index.html">Inicio / Home</a>
+        <a href="privacy.html">Privacidad / Privacy</a>
+        <a href="terms.html">Términos / Terms</a>
+    </div>
+</header>
+
+<div class="container">
+    <button class="lang-switch" onclick="toggleLanguage()">🌐 EN / ES</button>
+    <div style="clear: both;"></div>
+
+    <!-- SPANISH CONTENT -->
+    <div id="content-es" class="card" style="margin-top: 20px;">
+        <h2>📻 Bienvenido a AlarmaRetro</h2>
+        <p><strong>AlarmaRetro</strong> revive la entrañable experiencia de los clásicos radio-relojes despertadores de los años 80 y 90 directamente en tu mesita de noche.</p>
+
+        <h3>✨ Características Principales:</h3>
+        <ul>
+            <li><strong>Pantalla VFD Retro:</strong> Tubos de fósforo de 7 segmentos en colores Ámbar 1984, Verde Sony, Azul Fósforo y Rojo LED.</li>
+            <li><strong>Modo Mesita de Noche (Landscape):</strong> Diseñado exclusivamente para orientación horizontal y pantalla encendida continua.</li>
+            <li><strong>Touch-to-Illuminate:</strong> Toca la pantalla para iluminar al 100% y atenúa automáticamente al 5% para proteger tus ojos en la noche.</li>
+            <li><strong>Reloj Mecánico Flip-Clock:</strong> Alterna opcionalmente entre reloj VFD y reloj de pestañas mecánicas de solapa.</li>
+            <li><strong>Estación Meteorológica y Hora Mundial:</strong> Consulta la temperatura en tiempo real y la hora de ciudades mundiales (CDMX, Dubái, Londres, Tokio, etc.).</li>
+            <li><strong>Sonidos Ambientales para Dormir:</strong> Sintetizador analógico de crujido de vinilo, lluvia suave en cassette y estática de radio.</li>
+            <li><strong>Integración con Agenda:</strong> Muestra automáticamente tus eventos del calendario de hoy en la marquesina nocturna.</li>
+        </ul>
+
+        <div class="contact-info">
+            <h3>👤 Información del Desarrollador</h3>
+            <p><strong>Desarrollador:</strong> Diego Torres Barragán</p>
+            <p><strong>Contacto:</strong> <a href="mailto:spidermxone@gmail.com" style="color: var(--vfd-cyan);">spidermxone@gmail.com</a></p>
+        </div>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="content-en" class="card" style="margin-top: 20px; display: none;">
+        <h2>📻 Welcome to AlarmaRetro</h2>
+        <p><strong>AlarmaRetro</strong> brings back the classic 1980s & 90s bedside clock radio experience straight to your nightstand.</p>
+
+        <h3>✨ Key Features:</h3>
+        <ul>
+            <li><strong>Retro VFD Display:</strong> Glowing 7-segment phosphor digits in 1984 Amber, Sony Green, Phosphor Cyan, and Retro Red LED.</li>
+            <li><strong>Nightstand Mode (Landscape):</strong> Exclusively crafted for horizontal dock view with continuous keep-awake display.</li>
+            <li><strong>Touch-to-Illuminate:</strong> Tap to instantly brighten to 100%, auto-dimming down to 5% to protect your eyes at night.</li>
+            <li><strong>Mechanical Flip-Clock:</strong> Optionally toggle between VFD digits and retro split-flap mechanical card animation.</li>
+            <li><strong>Weather Station & World Time:</strong> Real-time temperature updates and dual city world time (CDMX, Dubai, London, Tokyo, etc.).</li>
+            <li><strong>Bedside Sleep Sounds:</strong> Analog synthesizer generating vinyl crackle, cassette rain, and radio static hum.</li>
+            <li><strong>Calendar Integration:</strong> Automatically projects your daily schedule and calendar events in the night marquee.</li>
+        </ul>
+
+        <div class="contact-info">
+            <h3>👤 Developer Information</h3>
+            <p><strong>Developer:</strong> Diego Torres Barragán</p>
+            <p><strong>Contact Email:</strong> <a href="mailto:spidermxone@gmail.com" style="color: var(--vfd-cyan);">spidermxone@gmail.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Diego Torres Barragán. Todos los derechos reservados / All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+    function toggleLanguage() {
+        const es = document.getElementById('content-es');
+        const en = document.getElementById('content-en');
+        if (es.style.display === 'none') {
+            es.style.display = 'block';
+            en.style.display = 'none';
+        } else {
+            es.style.display = 'none';
+            en.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

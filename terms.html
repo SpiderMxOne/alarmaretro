@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones - AlarmaRetro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="brand-title">AlarmaRetro</div>
+    <div class="brand-subtitle">Términos y Condiciones / Terms & Conditions</div>
+    <div class="nav-links">
+        <a href="index.html">Inicio / Home</a>
+        <a href="privacy.html">Privacidad / Privacy</a>
+        <a href="terms.html">Términos / Terms</a>
+    </div>
+</header>
+
+<div class="container">
+    <button class="lang-switch" onclick="toggleLanguage()">🌐 EN / ES</button>
+    <div style="clear: both;"></div>
+
+    <!-- SPANISH TERMS -->
+    <div id="content-es" class="card" style="margin-top: 20px;">
+        <h2>📜 Términos y Condiciones de Uso</h2>
+        <p><strong>Última actualización:</strong> 2026</p>
+        <p>Al descargar, instalar o utilizar la aplicación <strong>AlarmaRetro</strong>, desarrollada por <strong>Diego Torres Barragán</strong>, el usuario acepta cumplir los siguientes Términos y Condiciones.</p>
+
+        <h3>1. Uso de la Aplicación</h3>
+        <p>AlarmaRetro es una aplicación de reloj despertador retro diseñada para dispositivos móviles Android. La app se proporciona "tal cual" (*AS IS*) para uso personal no comercial.</p>
+
+        <h3>2. Alarmas y Responsabilidad del Usuario</h3>
+        <p>El usuario es responsable de verificar la correcta configuración de la hora, los niveles de volumen del dispositivo y de asegurar que la aplicación cuente con los permisos necesarios (alarmas exactas, optimización de batería) para sonar a tiempo.</p>
+
+        <h3>3. Compras In-App y Anuncios</h3>
+        <p>Las compras dentro de la app (versión PRO) y la visualización de anuncios se rigen por los términos de servicio de Google Play y Google AdMob. Las compras otorgadas son personales e intransferibles.</p>
+
+        <h3>4. Modificaciones</h3>
+        <p>El Desarrollador se reserva el derecho de actualizar la aplicación y estos términos en cualquier momento para mejorar el servicio.</p>
+
+        <div class="contact-info">
+            <p><strong>Desarrollador:</strong> Diego Torres Barragán</p>
+            <p><strong>Contacto:</strong> <a href="mailto:spidermxone@gmail.com" style="color: var(--vfd-cyan);">spidermxone@gmail.com</a></p>
+        </div>
+    </div>
+
+    <!-- ENGLISH TERMS -->
+    <div id="content-en" class="card" style="margin-top: 20px; display: none;">
+        <h2>📜 Terms and Conditions</h2>
+        <p><strong>Last Updated:</strong> 2026</p>
+        <p>By downloading, installing, or using the <strong>AlarmaRetro</strong> application, developed by <strong>Diego Torres Barragán</strong>, you agree to bound by these Terms and Conditions.</p>
+
+        <h3>1. Application Use</h3>
+        <p>AlarmaRetro is a retro bedside clock application provided "AS IS" for personal non-commercial use.</p>
+
+        <h3>2. User Responsibility</h3>
+        <p>The user is responsible for ensuring volume levels, time configuration, and system permissions (exact alarms, battery settings) are properly configured on the device for reliable alarm ringing.</p>
+
+        <h3>3. In-App Purchases and Ads</h3>
+        <p>In-app purchases (PRO Upgrade) and advertisement displays follow Google Play and Google AdMob terms of service.</p>
+
+        <h3>4. Contact Us</h3>
+        <div class="contact-info">
+            <p><strong>Developer:</strong> Diego Torres Barragán</p>
+            <p><strong>Contact Email:</strong> <a href="mailto:spidermxone@gmail.com" style="color: var(--vfd-cyan);">spidermxone@gmail.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Diego Torres Barragán. All rights reserved / Todos los derechos reservados.</p>
+    </footer>
+</div>
+
+<script>
+    function toggleLanguage() {
+        const es = document.getElementById('content-es');
+        const en = document.getElementById('content-en');
+        if (es.style.display === 'none') {
+            es.style.display = 'block';
+            en.style.display = 'none';
+        } else {
+            es.style.display = 'none';
+            en.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

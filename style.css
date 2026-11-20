@@ -1,0 +1,132 @@
+/* AlarmaRetro Retro VFD Theme - GitHub Pages Styling */
+
+:root {
+    --bg-dark: #090B0E;
+    --card-bg: #14181D;
+    --border-color: #242D38;
+    --vfd-amber: #FF9900;
+    --vfd-green: #00FF88;
+    --vfd-cyan: #00E5FF;
+    --text-white: #E6EDF3;
+    --text-muted: #8B949E;
+    --font-mono: 'Courier New', Courier, monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding-bottom: 60px;
+}
+
+header {
+    background: linear-gradient(180deg, #1C130D 0%, #090B0E 100%);
+    border-bottom: 2px solid var(--vfd-amber);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.brand-title {
+    font-family: var(--font-mono);
+    color: var(--vfd-amber);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 153, 0, 0.6);
+    letter-spacing: 2px;
+}
+
+.brand-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+.nav-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--vfd-cyan);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-weight: bold;
+    padding: 6px 14px;
+    border: 1px solid var(--vfd-cyan);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--vfd-cyan);
+    color: #000;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.5);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+h1, h2, h3 {
+    color: var(--vfd-amber);
+    font-family: var(--font-mono);
+    margin-bottom: 16px;
+}
+
+p, li {
+    color: var(--text-white);
+    margin-bottom: 12px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.lang-switch {
+    background: #1C222B;
+    border: 1px solid var(--vfd-amber);
+    color: var(--vfd-amber);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-weight: bold;
+    float: right;
+}
+
+.contact-info {
+    background-color: #192028;
+    border-left: 4px solid var(--vfd-green);
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
