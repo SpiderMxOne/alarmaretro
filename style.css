@@ -115,6 +115,31 @@ ul {
     float: right;
 }
 
+.download-btn-container {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF9900 0%, #CC6600 100%);
+    color: #000;
+    font-family: var(--font-mono);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(255, 153, 0, 0.8);
+    background: linear-gradient(135deg, #FFB333 0%, #FF9900 100%);
+}
+
 .contact-info {
     background-color: #192028;
     border-left: 4px solid var(--vfd-green);
